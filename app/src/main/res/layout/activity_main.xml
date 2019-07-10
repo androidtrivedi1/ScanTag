@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/fm_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="4dp"
+        android:layout_weight=".3"
+        android:background="#00000000"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="4dp"
+        android:layout_weight=".7"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:textColor="#fff"
+            android:visibility="gone"
+            android:text="Scan Tag" />
+
+        <Button
+            android:id="@+id/btn_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Scan in activity for result" />
+
+        <TextView
+            android:id="@+id/tv_result_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Item No. - "
+            android:padding="3dp"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_margin="4dp"/>
+        <TextView
+            android:id="@+id/tvgram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gram - "
+            android:textColor="#000"
+            android:padding="3dp"
+            android:inputType="numberDecimal"
+            android:textSize="20sp"
+            android:layout_margin="4dp"/>
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"/>
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:textColor="#fff"
+            android:background="@color/colorAccent"
+            android:layout_margin="4dp"/>
+        <Button
+            android:id="@+id/btnhistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="History"
+            android:textColor="#fff"
+            android:background="@color/colorAccent"
+            android:layout_margin="4dp"/>
+        <Button
+            android:id="@+id/btnclearall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear All"
+            android:textColor="#fff"
+            android:background="@color/colorAccent"
+            android:layout_margin="4dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
